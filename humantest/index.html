@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Human Test</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+  <body>
+    <div class="container"></div>
+      <header class="header">
+<h1 id="title" class="text-center">Human Test</h1> 
+  <p id="description" class="description text-center">In this survey, your answers will test whether you are human or not</p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Human name</label> 
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter your human name" required="">
+    </div>
+    <div class="form-group">
+     <label id="email-label" for="email">Human Email</label>
+     <input type="email" name="email" id="email"        class="form-control" placeholder="Enter your human Email" required="">
+  </div>
+  <div class="form-group">
+    <label id="number-label" for="number">Years of human life<span class="clue"> (optional)</span></label>
+    <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Years">
+    </div>
+  <div class="form-group">
+  <p>Are you human?</p>
+  <select id="dropdown" name="role" class="form-control" required="">
+            <option disabled="" selected="" value="">Select one</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+            <option value="no-sure">Not sure</option>
+            <option value="prefer-not">Prefer not to say</option>
+            <option value="alien">No, I'm an alien</option>
+          </select>
+          </div>
+ <div class="form-group">
+  <p>How does it feel to have human life?</p>
+  <label>
+            <input name="user-answer" value="good" type="radio" class="inline">So good</label>
+            <label>
+            <input name="user-answer" value="get-better" type="radio" class="inline">It could get better</label>
+            <label><input name="user-answer" value="hungry" type="radio" class="inline">I'm hungry</label>
+            <label>
+            <input name="user-answer" value="alien-here" type="radio" class="inline">I said I'm an alien</label>
+            </div>
+      <div class="form-group">
+<p>What is your favorite part of being human?</p>
+<select id="most-like" name="mostLike" class="form-control" required="">
+            <option disabled="" selected="" value="">Select one</option>
+            <option value="family">Family</option>
+            <option value="Friends">Friends</option>
+            <option value="food">Food</option>
+            <option value="sleep">Sleep</option>
+            <option value="not-human">I am not human, bro</option>
+          </select>
+          </div>
+   <div class="form-group">
+     <p>
+            What will you do after this survey?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+          <label><input name="prefer" value="sing-something" type="checkbox" class="inline">Sing something</label>
+          <label>
+            <input name="prefer" value="watch-tv" type="checkbox" class="inline">Watch TV</label>
+            <label><input name="prefer" value="cook-for-my-cat" type="checkbox" class="inline">Cook for my cat</label>
+            <label><input name="prefer" value="fly-up" type="checkbox" class="inline">Fly up</label>
+            <label><input name="prefer" value="eat-chicken-and-fries" type="checkbox" class="inline">Eat chicken and fries</label>
+            <label><input name="prefer" value="clean-my-room" type="checkbox" class="inline">Cleam my room</label>
+            <label><input name="prefer" value="upload-videos-to-youtube" type="checkbox" class="inline">Upload videos to youtube</label>
+            <label><input name="prefer" value="open-a-restaurant" type="checkbox" class="inline">Open a restaurant</label>
+            <label><input name="prefer" value="browse-the-wiki" type="checkbox" class="inline">Browse the Wiki</label>
+            <label><input name="prefer" value="see-anime" type="checkbox" class="inline">See anime</label>
+            <label><input name="prefer" value="i-have-no-idea" type="checkbox" class="inline">I have no idea</label>
+            </div>
+    <div class="form-group">
+<p>Something to confess?</p>
+<textarea id="confess" class="input-textarea" name="comment" rows="5" cols="30" placeholder="Enter your last words here..."></textarea>
+</div>
+    <div class="form-group">
+<input type="submit" id="submit" value="Submit"/>
+          </button>
+          </div>
+          </form>
+  </body>
